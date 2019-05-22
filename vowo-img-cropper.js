@@ -290,9 +290,6 @@ class VowoImgCropperElement extends PolymerElement
               type: Boolean,
               value: false
           },
-          localeJson:{
-              type:String
-          },
           locale:{
               type:Object
           }
@@ -316,7 +313,6 @@ class VowoImgCropperElement extends PolymerElement
       if (this.roundedArea) {
           this.addCss(this.$.cropimgpreview, 'rounded-preview');
       }
-      this.locale = JSON.parse(this.localeJson);
       this.addListeners();
   }
 
